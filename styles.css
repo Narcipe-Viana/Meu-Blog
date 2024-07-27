@@ -238,6 +238,7 @@ body.scrolled header {
     justify-content: center;
     cursor: pointer; /* Cursor de mão quando sobre o botão */
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 84px 14px;
 }
 
 #scrollToTop:hover {
