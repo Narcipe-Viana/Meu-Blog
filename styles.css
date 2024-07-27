@@ -5,9 +5,9 @@ body {
 }
 
 header {
-    background-color: #13181c;
+    background-color: #054ADA;
     color: #fff;
-    padding: 10px 0;
+    padding: 33px 0;
 }
 
 nav {
@@ -18,9 +18,12 @@ nav {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     
+}
+.cor_da_logo{
+    color: #ff914d;
 }
 .logo a{
     text-decoration: none;
