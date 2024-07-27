@@ -13,29 +13,47 @@
         content="saiba tudo sobre SEO e contrate serviços para impulsionar o tráfego orgânico do seu site">
     <meta name="robots" content="index,follow">
     <link rel="icon" href="FREELA SEO.png" type="image/png">
-
+    
 
 </head>
 
 <body>
     <header>
-        <nav class="container">
-            <div class="logo"><span class="cor_da_logo">FREELA</span>SEO</div>
-            <ul class="menu">
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <form class="search-form" action="#" method="get">
-                <input type="text" placeholder="Buscar..." name="search" aria-label="Campo de busca">
-            </form>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Menu Hamburguer -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Logo -->
+                <a class="navbar-brand" href="#"><span class="cor_da_logo">FREELA</span>SEO</a>
+    
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container" style="margin-top: 100px;">
         <div class="row">
-            <div class="col-9">
-                <article class="container">
+            <div class="col-12 col-md-9">
+
+                <article class="container topo_1">
                     <section>
+                        <h1 style="color: #274ad6fa;">SEO, ou Search Engine Optimization</h1><h3>Otimização para Mecanismos de Busca</h3> <br>
                         <p><span style="font-weight: 400;">SEO, ou Search Engine Optimization (Otimiza&ccedil;&atilde;o
                                 para Mecanismos de Busca), &eacute; o conjunto de t&eacute;cnicas e estrat&eacute;gias
                                 utilizadas para melhorar a visibilidade de um site nos resultados org&acirc;nicos dos
@@ -859,7 +877,7 @@
                 </article>
 
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3">
                 <iframe id="JotFormIFrame-242076014293047" title="Entre em contato" onload="window.parent.scrollTo(0,0)"
                     allowtransparency="true" allow="geolocation; microphone; camera; fullscreen"
                     src="https://form.jotform.com/242076014293047" frameborder="0"
@@ -871,16 +889,60 @@
     </div>
 
     <footer>
-        <nav class="container">
-            <ul class="menu">
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#topo">Voltar ao Topo</a></li>
-            </ul>
-
-        </nav>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a class="navbar-brand" href="#"><span class="cor_da_logo">FREELA</span>SEO</a>
+            </div>
+            <nav class="footer-nav">
+                <ul class="menu">
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Todos os direitos reservados</p>
+        </div>
     </footer>
+    <button id="scrollToTop" title="Voltar ao topo">&#8679;</button>
 
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('body').addClass('scrolled');
+            } else {
+                $('body').removeClass('scrolled');
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var scrollToTopButton = document.getElementById('scrollToTop');
+
+        // Função para mostrar/ocultar o botão
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) { // Exibe o botão quando rolar mais de 300px
+                scrollToTopButton.classList.add('show');
+            } else {
+                scrollToTopButton.classList.remove('show');
+            }
+        });
+
+        // Função para rolar para o topo ao clicar no botão
+        scrollToTopButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Animação suave
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

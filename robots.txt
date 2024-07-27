@@ -2,3 +2,6 @@
 User-agent: *
 Disallow: /privado/
 Allow: /
+
+# Sitemap
+Sitemap: https://freelaseo.com.br/sitemap.xml
