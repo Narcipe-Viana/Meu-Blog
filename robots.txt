@@ -1,0 +1,4 @@
+# Permitir todos os bots acessarem todo o site
+User-agent: *
+Disallow: /privado/
+Allow: /
