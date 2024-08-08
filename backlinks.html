@@ -539,15 +539,65 @@
             <div class="col-lg-4">
                 <!-- Search widget-->
                 <div class="card mb-4">
-                    <div class="card-header">Pesquise</div>
-                    <div class="card-body">
-                        <div class="input-group">
-                            <input class="form-control" type="text" placeholder="digite o que deseja..."
-                                aria-label="Enter search term..." aria-describedby="button-search" />
-                            <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                        <div class="card-header">Pesquise</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="digite o que deseja..." aria-label="Enter search term..." aria-describedby="button-search" id="search-term" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    
+                        <div id="search-results"></div>
+
+
+
+
+
+
+
+                        
+<script>
+    // URLs das páginas para buscar
+    const pages = [
+        "o-que-e-seo.html",
+        "seo-e-ux.html",
+        "backlinks.html"
+        // Adicione mais URLs conforme necessário
+    ];
+
+    document.getElementById("button-search").addEventListener("click", function() {
+        const searchTerm = document.getElementById("search-term").value.toLowerCase();
+        const resultsContainer = document.getElementById("search-results");
+        resultsContainer.innerHTML = "<p>Buscando...</p>";
+
+        // Array para armazenar as promessas de fetch
+        const fetchPromises = pages.map(page => fetch(page).then(response => response.text()));
+
+        // Quando todas as requisições estiverem completas
+        Promise.all(fetchPromises).then(pagesContent => {
+            resultsContainer.innerHTML = "";  // Limpar resultados anteriores
+            let found = false;
+
+            pagesContent.forEach((content, index) => {
+                if (content.toLowerCase().includes(searchTerm)) {
+                    found = true;
+                    const resultDiv = document.createElement("div");
+                    resultDiv.classList.add("search-result");
+                    resultDiv.innerHTML = `<div class="card-body sensor"><a href="${pages[index]}" target="_blank">${pages[index]}</a></div>`;
+                    resultsContainer.appendChild(resultDiv);
+                }
+            });
+
+            if (!found) {
+                resultsContainer.innerHTML = "<p>Nenhum resultado encontrado.</p>";
+            }
+        }).catch(error => {
+            resultsContainer.innerHTML = "<p>Ocorreu um erro ao buscar as páginas.</p>";
+            console.error("Erro ao buscar páginas:", error);
+        });
+    });
+</script>
+
                 <!-- Categories widget
                 <div class="card mb-4">
                     <div class="card-header">Categories</div>
