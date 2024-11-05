@@ -3,46 +3,40 @@
 
   <!-- Página principal -->
   <url>
-    <loc>https://freelaseo.com.br/index</loc>
+    <loc>https://freelaseo.com.br/index.html</loc>
     <lastmod>2024-07-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Página sobre -->
-  <url>
-    <loc>https://freelaseo.com.br/sobre</loc>
-    <lastmod>2024-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
 <url>
-    <loc>https://freelaseo.com.br/contato</loc>
+    <loc>https://freelaseo.com.br/contato.html</loc>
     <lastmod>2024-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freelaseo.com.br/o-que-e-seo</loc>
+    <loc>https://freelaseo.com.br/o-que-e-seo.html</loc>
     <lastmod>2024-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
    <url>
-    <loc>https://freelaseo.com.br/seo-e-ux</loc>
+    <loc>https://freelaseo.com.br/seo-e-ux.html</loc>
     <lastmod>2024-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freelaseo.com.br/intencao-de-busca-seo</loc>
+    <loc>https://freelaseo.com.br/intencao-de-busca-seo.html</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freelaseo.com.br/como-posicionar-seu-site-no-google</loc>
+    <loc>https://freelaseo.com.br/como-posicionar-seu-site-no-google.html</loc>
     <lastmod>2024-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
