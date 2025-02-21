@@ -43,9 +43,9 @@ color: #494949;
   border-bottom:none!important
   
 }
-.cor-de-fundo-2{
-  background: linear-gradient(1deg, #5d72e9, #0817f0);
-  color:#ffffff
+.cor-de-fundo-2 {
+    color: #2a4265;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1.0)), url(https://img.freepik.com/vetores-gratis/fundo-de-textura-de-padrao-de-meio-tonalidade-preto-e-branco_84443-21975.jpg);
 }
 
 .fw-bolder {
