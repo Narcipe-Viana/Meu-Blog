@@ -106,10 +106,10 @@ color: #494949;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #464646;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -10931,4 +10931,17 @@ textarea.form-control-lg {
   margin-bottom: 53px;
   border: solid 1px #0000000d;
   border-radius: 12px;
+}
+
+.largura-do-conteudo{
+  max-width: 746px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+@media (min-widht:900px){
+
+ .largura-do-conteudo{padding: 0% 15%;;}
 }
